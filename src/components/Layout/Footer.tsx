@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import anime from 'animejs';
+import { anime } from 'animejs';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();

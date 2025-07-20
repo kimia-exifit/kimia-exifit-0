@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import anime from 'animejs';
+import { anime } from 'animejs';
 import { ShoppingBag, ArrowRight, X, Check, Star, Sparkles } from 'lucide-react';
 import { products } from '../data/products';
 
