@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs';
 import { Users, Code, Heart, Brain, ChevronDown, ChevronUp } from 'lucide-react';
 
 const TeamSection: React.FC = () => {
