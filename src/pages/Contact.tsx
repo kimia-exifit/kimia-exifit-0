@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { anime } from 'animejs';
+import anime from 'animejs';
 import { Mail, Phone, MapPin, Clock, Send, User, MessageSquare, Sparkles } from 'lucide-react';
 
 const Contact: React.FC = () => {

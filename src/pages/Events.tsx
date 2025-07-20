@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { anime } from 'animejs';
+import anime from 'animejs';
 import { Calendar, Clock, MapPin, ExternalLink, Users, Sparkles } from 'lucide-react';
 import { events } from '../data/events';
 

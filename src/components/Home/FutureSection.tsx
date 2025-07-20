@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { anime } from 'animejs';
+import anime from 'animejs';
 import { Calendar, Target, Rocket, Users, TrendingUp, Award, Sparkles } from 'lucide-react';
 
 const FutureSection: React.FC = () => {
