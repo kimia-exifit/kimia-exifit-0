@@ -1,8 +1,10 @@
+// src/components/Layout/Footer.tsx
 import React, { useEffect, useRef, useState } from 'react';
 import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import anime from 'animejs';
+import anime from 'animejs/lib/anime.es.js';
 
 const Footer: React.FC = () => {
+  // ... rest of the component code remains the same
   const currentYear = new Date().getFullYear();
   const footerRef = useRef<HTMLElement>(null);
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -13,7 +15,7 @@ const Footer: React.FC = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-            
+
             // Animate footer sections
             anime({
               targets: footerRef.current?.querySelectorAll('.footer-section'),
@@ -88,7 +90,7 @@ const Footer: React.FC = () => {
                 </span>
               </div>
               <p className="text-gray-800 mb-8 leading-relaxed font-semibold text-lg">
-                ما متعهد به ارائه بهترین خدمات فناوری اطلاعات در حوزه سلامت هستیم. 
+                ما متعهد به ارائه بهترین خدمات فناوری اطلاعات در حوزه سلامت هستیم.
                 با تیمی متخصص و تجربه چندین ساله، راه‌حل‌های نوآورانه و کارآمد برای صنعت سلامت ارائه می‌دهیم.
               </p>
               <div className="flex space-x-4 space-x-reverse">
@@ -141,7 +143,7 @@ const Footer: React.FC = () => {
             <div className="footer-section" style={{ opacity: 0 }}>
               <h3 className="text-lg font-black mb-6 text-purple-600">اطلاعات تماس</h3>
               <div className="space-y-4">
-                <div 
+                <div
                   className="flex items-center space-x-3 space-x-reverse text-gray-800"
                   onMouseEnter={handleLinkHover}
                   onMouseLeave={handleLinkLeave}
@@ -149,7 +151,7 @@ const Footer: React.FC = () => {
                   <MapPin className="w-5 h-5 text-purple-500 flex-shrink-0" />
                   <span className="text-sm font-semibold">تهران، خیابان ولیعصر، پلاک ۱۲۳</span>
                 </div>
-                <div 
+                <div
                   className="flex items-center space-x-3 space-x-reverse text-gray-800"
                   onMouseEnter={handleLinkHover}
                   onMouseLeave={handleLinkLeave}
@@ -157,7 +159,7 @@ const Footer: React.FC = () => {
                   <Phone className="w-5 h-5 text-purple-500 flex-shrink-0" />
                   <span className="text-sm font-semibold" dir="ltr">+98 21 1234 5678</span>
                 </div>
-                <div 
+                <div
                   className="flex items-center space-x-3 space-x-reverse text-gray-800"
                   onMouseEnter={handleLinkHover}
                   onMouseLeave={handleLinkLeave}
