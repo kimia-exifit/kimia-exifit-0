@@ -1,8 +1,10 @@
+// src/components/Home/FutureSection.tsx
 import React, { useEffect, useRef, useState } from 'react';
-import anime from 'animejs';
+import anime from 'animejs/lib/anime.es.js';
 import { Calendar, Target, Rocket, Users, TrendingUp, Award, Sparkles } from 'lucide-react';
 
 const FutureSection: React.FC = () => {
+  // ... rest of the component code remains the same
   const sectionRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
@@ -48,7 +50,7 @@ const FutureSection: React.FC = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-            
+
             // Animate header
             anime({
               targets: headerRef.current,
@@ -161,7 +163,7 @@ const FutureSection: React.FC = () => {
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-emerald-500 rounded-2xl flex items-center justify-center">
                       <plan.icon className="w-6 h-6 text-white" />
                     </div>
-                    
+
                     <div className="flex-1">
                       <h3 className="text-lg font-black text-gray-800 mb-3 group-hover:text-purple-600 transition-colors">
                         {plan.title}
@@ -198,5 +200,6 @@ const FutureSection: React.FC = () => {
     </section>
   );
 };
+
 
 export default FutureSection;
